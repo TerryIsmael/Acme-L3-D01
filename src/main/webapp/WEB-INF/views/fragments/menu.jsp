@@ -19,21 +19,11 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-		
-		
-		
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link-4" action="https://monkey.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
-<<<<<<< HEAD
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-1" action="https://www.youtube.com/watch?v=_y9Hc5xKc0Y"/>
 			
-			
-=======
-			
-			
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-3" action="https://www.ogsbrand.com/es/"/>
->>>>>>> branch 'main' of https://github.com/TerryIsmael/Acme-L3-D01
-			
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link-4" action="https://monkey.com/"/>
 			
 		</acme:menu-option>
 
