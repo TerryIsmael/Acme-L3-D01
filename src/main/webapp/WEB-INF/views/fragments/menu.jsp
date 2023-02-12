@@ -24,6 +24,11 @@
 		
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-4" action="https://monkey.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
+			
+			
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link-3" action="https://www.ogsbrand.com/es/"/>
+			
+			
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
