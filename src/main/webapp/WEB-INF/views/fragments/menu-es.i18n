@@ -21,9 +21,15 @@ master.menu.anonymous = An√≥nimo
 master.menu.anonymous.favourite-link = Enlace favorito
 
 
+master.menu.anonymous.favourite-link-3 = 32100382H: Arriaza Arriaza, Daniel
+master.menu.anonymous.favourite-link-4 = 53986326J:Alcobendas Santos, Jose Javier 
 
 
+<<<<<<< HEAD
 master.menu.anonymous.favourite-link-4 = 53986326J:Alcobendas Santos,JosÈ Javier 
+=======
+
+>>>>>>> branch 'S4-NF01' of https://github.com/TerryIsmael/Acme-L3-D01.git
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
