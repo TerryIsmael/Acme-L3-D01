@@ -11,10 +11,10 @@
 	
 # master.sign-in ##############################################################
 
-master.sign-in.label.username = Apodo:
+master.sign-in.label.username = Usuario:
 master.sign-in.label.password = Contraseña:
 master.sign-in.label.remember-me = Recuérdame
-master.sign-in.button.sign-in = Entrar
+master.sign-in.button.sign-in = Iniciar Sesión
 master.sign-in.button.return = Volver
 master.sign-in.error.text = Fallo de autentificación 
 	
