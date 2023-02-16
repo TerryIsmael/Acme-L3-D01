@@ -10,11 +10,10 @@
 
 master.company.title = The company
 master.company.text = \
-	Acme One, Inc. is a fictitious company that provides a starter \
-	project for the students of the Design and Testing subject of the \
-	Software Engineering Curriculum of the University of Seville.
-master.company.name = Acme One, Inc.
-master.company.address = 01 Acme Drive, Wondercity, Wonderland
-master.company.phone = +1 000 111 222
-master.company.email = contact@acme-one.com
+	Acme L3-D01, Inc. is a fictitious company composed by students of the Design  \
+	and Testing subject of the Software Engineering Curriculum of the University of Seville.
+master.company.name = Acme L3-D01, Inc.
+master.company.address = Escuela Técnica Superior de Ingeniería Informática, 41012 Sevilla
+master.company.phone = +34 954 55 68 17
+master.company.email = usevilla@us.com
 
