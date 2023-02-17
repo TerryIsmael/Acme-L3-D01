@@ -10,9 +10,10 @@
 
 master.company.title = The company
 master.company.text = \
-	Acme L3-D01, Inc. is a fictitious company composed by students of the Design  \
-	and Testing subject of the Software Engineering Curriculum of the University of Seville.
-master.company.name = Acme L3-D01, Inc.
+	Acme Life-Long Learning, Inc. (Acme L3, Inc. for short) is a \
+	fictitious company that specialises in helping learners get started \
+	 on a variety of matters with the help of renowned lecturers.  
+master.company.name = Acme L3, Inc.
 master.company.address = Escuela Técnica Superior de Ingeniería Informática, 41012 Sevilla
 master.company.phone = +34 954 55 68 17
 master.company.email = usevilla@us.com
