@@ -4,12 +4,18 @@ package acme.entities.tutorialsSessions;
 import java.sql.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.entities.enumerates.TutorialSessionType;
+import acme.entities.tutorials.Tutorial;
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -33,9 +39,16 @@ public class TutorialSession extends AbstractEntity {
 	@Length(max = 101)
 	protected String				resume;
 
+	@NotNull
 	protected TutorialSessionType	type;
 
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
 	protected Date					startDate;
+
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date					finishDate;
 
 	@URL
 	protected String				link;
@@ -43,4 +56,8 @@ public class TutorialSession extends AbstractEntity {
 
 	// Relationships ----------------------------------------------------------
 
+	@NotNull
+	@ManyToOne
+	@Valid
+	protected Tutorial				tutorial;
 }
