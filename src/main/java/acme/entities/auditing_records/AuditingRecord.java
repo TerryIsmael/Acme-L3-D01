@@ -1,5 +1,5 @@
 
-package entities.auditing_records;
+package acme.entities.auditing_records;
 
 import java.util.Date;
 
@@ -15,8 +15,8 @@ import javax.validation.constraints.Past;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.audits.Audit;
 import acme.framework.data.AbstractEntity;
-import entities.audits.Audit;
 import lombok.Getter;
 import lombok.Setter;
 

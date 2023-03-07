@@ -1,5 +1,5 @@
 
-package entities.audits;
+package acme.entities.audits;
 
 import acme.framework.data.AbstractEntity;
 
