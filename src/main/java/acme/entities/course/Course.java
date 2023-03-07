@@ -5,12 +5,12 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
-import javax.validation.constraints.PositiveOrZero;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.enumerates.Type;
+import acme.entities.enumerates.CourseType;
+import acme.framework.components.datatypes.Money;
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -36,11 +36,10 @@ public class Course extends AbstractEntity {
 	protected String			title;
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 101)
 	protected String			abstract_;
 
-	@PositiveOrZero
-	protected Double			retailPrice;
+	protected Money				retailPrice;
 
 	@URL
 	protected String			link;
@@ -48,7 +47,7 @@ public class Course extends AbstractEntity {
 
 
 	@NotBlank
-	protected Type type() {
+	protected CourseType type() {
 		return null;
 	}
 

@@ -1,6 +1,6 @@
 
 package acme.entities.enumerates;
 
-public enum Type {
+public enum CourseType {
 	THEORETICAL, HANDS_ON, BALANCED
 }
