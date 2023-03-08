@@ -39,6 +39,7 @@ public class AuditingRecord extends AbstractEntity {
 	@Length(max = 101)
 	protected String			assessment;
 
+	//TODO: Service restriction: This period must be longer than 1 hour
 	@NotNull
 	@Past
 	@Temporal(TemporalType.TIMESTAMP)
