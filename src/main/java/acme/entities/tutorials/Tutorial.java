@@ -46,6 +46,7 @@ public class Tutorial extends AbstractEntity {
 
 	@Transient
 	protected Integer totalTime() {
+		//estimatedHours: sum of stretchs  of time of associated TutorialSessions.
 		return null;
 	}
 
