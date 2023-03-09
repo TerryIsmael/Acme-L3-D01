@@ -43,7 +43,7 @@ public class Practicum extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 
 
-	protected Double estimatedHours() {
+	protected Double estimatedHours() { //Sum of stretchs of time of associated PracticumSessions.
 		return null;
 	}
 
