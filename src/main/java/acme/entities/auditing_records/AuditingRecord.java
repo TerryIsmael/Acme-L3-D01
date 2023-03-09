@@ -1,5 +1,5 @@
 
-package acme.entities.tutorialsSessions;
+package acme.entities.auditing_records;
 
 import java.util.Date;
 
@@ -10,12 +10,12 @@ import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.enumerates.Type;
-import acme.entities.tutorials.Tutorial;
+import acme.entities.audits.Audit;
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,41 +23,44 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class TutorialSession extends AbstractEntity {
+public class AuditingRecord extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
-	protected static final long	serialVersionUID	= 1L;
+	private static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
 	@Length(max = 76)
-	protected String			title;
+	protected String			subject;
 
 	@NotBlank
 	@Length(max = 101)
-	protected String			resume;
+	protected String			assessment;
 
+	//TODO: Service restriction: This period must be longer than 1 hour
 	@NotNull
-	protected Type				type;
-
-	@NotNull
+	@Past
 	@Temporal(TemporalType.TIMESTAMP)
 	protected Date				startDate;
 
 	@NotNull
+	@Past
 	@Temporal(TemporalType.TIMESTAMP)
 	protected Date				finishDate;
 
+	@NotNull
+	protected Mark				mark;
+
 	@URL
 	protected String			link;
-	// Derived attributes -----------------------------------------------------
 
 	// Relationships ----------------------------------------------------------
 
 	@NotNull
-	@ManyToOne
 	@Valid
-	protected Tutorial			tutorial;
+	@ManyToOne(optional = false)
+	protected Audit				audit;
+
 }
