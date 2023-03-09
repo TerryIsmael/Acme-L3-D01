@@ -37,7 +37,10 @@ public class PracticumSessions extends AbstractEntity {
 	@Length(max = 101)
 	protected String			abstract_;
 
+	@NotNull
 	protected Date				startDate;
+
+	@NotNull
 	protected Date				finishDate;
 
 	@URL
