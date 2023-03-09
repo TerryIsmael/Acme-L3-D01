@@ -14,25 +14,25 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Lecturer extends AbstractRole {
+public class Student extends AbstractRole {
 
 	// Serialisation identifier -----------------------------------------------
 
-	protected static final long	serialVersionUID	= 1L;
+	private static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
 	@Length(max = 76)
-	protected String			almaMater;
+	protected String			statement;
 
 	@NotBlank
 	@Length(max = 101)
-	protected String			resume;
+	protected String			strongFeatures;
 
 	@NotBlank
 	@Length(max = 101)
-	protected String			qualifications;
+	protected String			weakFeatures;
 
 	@URL
 	protected String			link;
