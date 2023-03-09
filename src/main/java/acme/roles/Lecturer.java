@@ -1,22 +1,20 @@
 
-package acme.entities.tutorials;
+package acme.roles;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Transient;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
-import acme.framework.data.AbstractEntity;
+import acme.framework.data.AbstractRole;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Tutorial extends AbstractEntity {
+public class Lecturer extends AbstractRole {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -25,29 +23,21 @@ public class Tutorial extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	@Column(unique = true)
-	@Pattern(regexp = "[A-Z]{1,3}[0-9]{3}")
-	protected String			code;
+	@Length(max = 76)
+	protected String			almaMater;
 
 	@NotBlank
-	@Length(max = 75)
-	protected String			title;
+	@Length(max = 101)
+	protected String			resume;
 
 	@NotBlank
-	@Length(max = 100)
-	protected String			summary;
+	@Length(max = 101)
+	protected String			qualifications;
 
-	@NotBlank
-	@Length(max = 100)
-	protected String			goals;
+	@URL
+	protected String			link;
 
 	// Derived attributes -----------------------------------------------------
-
-
-	@Transient
-	protected Integer totalTime() {
-		return null;
-	}
 
 	// Relationships ----------------------------------------------------------
 
