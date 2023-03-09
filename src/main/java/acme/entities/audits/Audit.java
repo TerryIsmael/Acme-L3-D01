@@ -14,6 +14,7 @@ import org.hibernate.validator.constraints.Length;
 import acme.entities.courses.Course;
 import acme.framework.data.AbstractEntity;
 import acme.roles.Auditor;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -57,6 +58,6 @@ public class Audit extends AbstractEntity {
 	@ManyToOne(optional = false)
 	protected Course			course;
 
-	//TODO: An audit must show every auditing records marks in screen
+	//TODO: An audit must show every associated auditing record marks in screen
 
 }
