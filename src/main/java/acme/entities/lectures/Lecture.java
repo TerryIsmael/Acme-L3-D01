@@ -6,7 +6,9 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
-
+import lombok.Getter;
+import lombok.Setter;
+import javax.persistence.Entity;
 import acme.entities.enumerates.Type;
 import acme.framework.data.AbstractEntity;
 @Getter 
