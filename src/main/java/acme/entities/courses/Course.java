@@ -51,7 +51,6 @@ public class Course extends AbstractEntity {
 
 
 	//TODO: Calcular atributo type
-	@NotBlank
 	protected CourseType type() {
 		return null;
 	}
