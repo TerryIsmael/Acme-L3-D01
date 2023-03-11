@@ -32,11 +32,11 @@ public class AuditingRecord extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 75)
 	protected String			subject;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	protected String			assessment;
 
 	//TODO: Service restriction: This period must be longer than 1 hour
