@@ -39,11 +39,11 @@ public class Offer extends AbstractEntity {
 	protected Date				instantiationMoment;
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 75)
 	protected String			heading;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	protected String			summary;
 
 	//TODO: restriction: start date must be at least 1 day after it's instantiation date
