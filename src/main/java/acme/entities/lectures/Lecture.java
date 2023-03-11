@@ -1,10 +1,6 @@
 
 package acme.entities.lectures;
 
-import java.util.Date;
-
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -23,18 +19,18 @@ public class Lecture extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 75)
 	protected String			title;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	protected String			abstract_;
 
-	@Temporal(TemporalType.TIME)
-	protected Date				learningTime;
+	@NotNull
+	protected Double			learningTime;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	protected String			body;
 
 	@NotNull
