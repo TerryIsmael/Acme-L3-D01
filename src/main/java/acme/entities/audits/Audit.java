@@ -35,15 +35,15 @@ public class Audit extends AbstractEntity {
 	protected String			code;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	protected String			conclusion;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	protected String			strongPoints;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	protected String			weakPoints;
 
 	// Relationships ----------------------------------------------------------
