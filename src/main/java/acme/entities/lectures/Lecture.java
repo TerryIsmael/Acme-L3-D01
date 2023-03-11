@@ -9,7 +9,9 @@ import org.hibernate.validator.constraints.URL;
 
 import acme.entities.enumerates.Type;
 import acme.framework.data.AbstractEntity;
-
+@Getter 
+@Setter
+@Entity
 public class Lecture extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
