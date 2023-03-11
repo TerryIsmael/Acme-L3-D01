@@ -32,11 +32,11 @@ public class Course extends AbstractEntity {
 	protected String			code;
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 75)
 	protected String			title;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	protected String			abstract_;
 
 	protected Money				retailPrice;
@@ -46,6 +46,7 @@ public class Course extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 
 
+	//TODO: Calcular atributo type
 	@NotBlank
 	protected CourseType type() {
 		return null;
