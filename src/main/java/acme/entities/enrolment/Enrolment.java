@@ -1,8 +1,11 @@
 
 package acme.entities.enrolment;
 
+import java.beans.Transient;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
@@ -29,10 +32,31 @@ public class Enrolment extends AbstractEntity {
 	protected String			code;
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 75)
 	protected String			motivation;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	protected String			goals;
+
+	// Derived attributes -----------------------------------------------------
+
+
+	@Transient
+	//TODO: función derivada
+	private static Integer period() {
+		/*
+		 * Se trata de una propiedad derivada
+		 * que va a calcular el periodo de tiempo de una inscripccion
+		 * mediante las actividades asociadas a esta.
+		 */
+		return null;
+	}
+
+	// Relationships ----------------------------------------------------------
+
+
+	@ManyToOne(optional = false)
+	protected Course course;
+
 }
