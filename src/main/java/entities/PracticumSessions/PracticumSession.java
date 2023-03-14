@@ -15,7 +15,7 @@ import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.data.AbstractEntity;
-import entities.Practicum.Practicum;
+import entities.Practicums.Practicum;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -23,7 +23,7 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class PracticumSessions extends AbstractEntity {
+public class PracticumSession extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
@@ -32,12 +32,12 @@ public class PracticumSessions extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 75)
 	protected String			title;
 
 	@NotBlank
-	@Length(max = 101)
-	protected String			abstract_;
+	@Length(max = 100)
+	protected String			abstraction;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
