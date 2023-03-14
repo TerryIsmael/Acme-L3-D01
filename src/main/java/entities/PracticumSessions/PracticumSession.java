@@ -14,8 +14,8 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.practicums.Practicum;
 import acme.framework.data.AbstractEntity;
-import entities.Practicums.Practicum;
 import lombok.Getter;
 import lombok.Setter;
 
