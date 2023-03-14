@@ -16,7 +16,6 @@ import org.hibernate.validator.constraints.URL;
 import acme.framework.data.AbstractEntity;
 
 @Entity
-
 public class Activity extends AbstractEntity {
 
 	protected static final long	serialVersionUID	= 1L;
