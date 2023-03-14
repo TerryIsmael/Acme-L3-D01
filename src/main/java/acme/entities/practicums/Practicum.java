@@ -3,6 +3,7 @@ package acme.entities.practicums;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
@@ -34,7 +35,7 @@ public class Practicum extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String			abstract_;
+	protected String			abstraction;
 
 	@NotBlank
 	@Length(max = 100)
@@ -43,6 +44,7 @@ public class Practicum extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 
 
+	@Transient
 	protected Double estimatedHours() { //Sum of stretchs of time of associated PracticumSessions.
 		return null;
 	}
