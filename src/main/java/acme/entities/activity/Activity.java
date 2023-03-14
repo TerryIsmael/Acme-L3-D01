@@ -31,8 +31,7 @@ public class Activity extends AbstractEntity {
 	@Length(max = 100)
 	protected String			description;
 
-	@NotBlank
-	@Length(max = 100)
+	@NotNull
 	protected Type				activityType;
 
 	@Temporal(TemporalType.TIMESTAMP)
