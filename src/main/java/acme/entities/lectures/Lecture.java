@@ -1,19 +1,21 @@
 
 package acme.entities.lectures;
 
+import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
-import lombok.Getter;
-import lombok.Setter;
-import javax.persistence.Entity;
+
 import acme.entities.enumerates.Type;
 import acme.framework.data.AbstractEntity;
-@Getter 
-@Setter
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
+@Getter
+@Setter
 public class Lecture extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
@@ -28,8 +30,9 @@ public class Lecture extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String			abstract_;
+	protected String			abstraction;
 
+	//Positive, not null
 	@NotNull
 	protected Double			learningTime;
 
